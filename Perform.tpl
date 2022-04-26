@@ -122,8 +122,8 @@ function getRequestUrl(evenData)
     if (cid)
         requestUrl+='&cid='+encodeUriComponent(cid);
     if (eventData.event_name){
-        if (evenData.event_name === 'page_view')
-          requestUrl+= '&event=page-land';
+        if (eventData.event_name === 'page_view')
+          requestUrl+= '&event=page-land&weight=0';
         else
           requestUrl+='&event='+encodeUriComponent(eventData.event_name);
     }
@@ -344,6 +344,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 4/8/2022, 8:02:57 PM
+Created on 26/04/2022, 13:21:12
 
 
